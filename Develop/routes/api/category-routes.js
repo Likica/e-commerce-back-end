@@ -6,30 +6,30 @@ const { Category, Product } = require('../../models');
 router.get('/api/categories', (req, res) => {
   // find all categories
   // be sure to include its associated Products
-  db.Category.findAll({
+  Category.findAll({
     include: [Product]
   })
-    .then(dbCategory => res.json(dbCategory))
+    .then(Category => res.json(Category))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
 });
 
-router.get('/api/categories/:id', (req, res) => {
+router.get('/api/category/:id', (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
-  db.Category.findOne({
+  Category.findOne({
     where: {
       id: req.params.id
     },
     include: [Product]
-  }).then(dbCategory => {
-    if (!dbCategory) {
+  }).then(Category => {
+    if (!Category) {
       res.status(404).json({ message: 'No category found with this id' });
       return;
     }
-    res.json(dbCategory,);
+    res.json(Category,);
   })
     .catch(err => {
       console.log(err);
@@ -37,17 +37,17 @@ router.get('/api/categories/:id', (req, res) => {
     });
 });
 
-router.post('/api/categories', (req, res) => {
+router.post('/api/category', (req, res) => {
   // create a new category
-  db.Category.create(req.body)
-    .then(dbCategory => {
-      res.json(dbCategory);
+  Category.create(req.body)
+    .then(Category => {
+      res.json(Category);
     });
 });
 
-router.put('/api/categories/:id', (req, res) => {
+router.put('/api/category/:id', (req, res) => {
   // update a category by its `id` value
-  db.Category.update({
+  Category.update({
     category: req.body.category
   },
     {
@@ -55,19 +55,19 @@ router.put('/api/categories/:id', (req, res) => {
         id: req.params.id
       }
     }
-  ).then(dbCategory => {
-    res.json(dbCategory);
+  ).then(Category => {
+    res.json(Category);
   });
 });
 
-router.delete('/api/categories/:id', (req, res) => {
+router.delete('/api/category/:id', (req, res) => {
   // delete a category by its `id` value
-  db.Category.destroy({
+  Category.destroy({
     where: {
       id: req.params.id
     }
-  }).then(dbCategory => {
-    res.json(dbCategory);
+  }).then(Category => {
+    res.json(Category);
   });
 });
 
