@@ -1,5 +1,5 @@
 const seedCategories = require('./category-seeds');
-const seedProducts = require('./product-seeds');
+const seedProduct = require('./product-seeds');
 const seedTags = require('./tag-seeds');
 const seedProductTags = require('./product-tag-seeds');
 
@@ -11,7 +11,7 @@ const seedAll = async () => {
   await seedCategories();
   console.log('\n----- CATEGORIES SEEDED -----\n');
 
-  await seedProducts();
+  await seedProduct();
   console.log('\n----- PRODUCTS SEEDED -----\n');
 
   await seedTags();

@@ -24,7 +24,7 @@ ProductTag.init(
       allowNull: false,
       references: {
         //this is reference to another model
-        model: Product,
+        model: "Product",
         //this is the column name of the referenced model
         key: 'id'
       }
@@ -33,7 +33,7 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       references: {
         //this is reference to another model
-        model: Tag,
+        model: "Tag",
         //this is the column name of the referenced model
         key: 'id'
       }
