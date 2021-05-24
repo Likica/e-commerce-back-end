@@ -7,6 +7,7 @@ router.get('/', (req, res) => {
   // find all tags
   // be sure to include its associated Product data
   Tag.findAll({
+    //REMOVED ProductTag from include:[] and api/tags route (URL) works in Insomnia
     include: [Product]
   })
     .then(Tag => res.json(Tag))
@@ -23,6 +24,7 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
+    //REMOVED ProductTag from include:[] and api/tags route (URL) works in Insomnia
     include: [Product]
   })
     .then(Tag => res.json(Tag))
