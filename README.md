@@ -1,7 +1,7 @@
 <h1 align='center'>e-commerce-back-end</h1>
 
 ### By likica * [Email me](mailto:fahrija_wyroski@live.com) * 
-  * [Walkthrough-video Link]() 
+  * [Walkthrough-video Link]('In Porgress') 
   * [GitHub Project Link](https://github.com/likica/e-commerce-back-end)
 <br></br>
 

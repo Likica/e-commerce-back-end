@@ -7,8 +7,10 @@ router.get('/', (req, res) => {
   // find all tags
   // be sure to include its associated Product data
   Tag.findAll({
-    //REMOVED ProductTag from include:[] and api/tags route (URL) works in Insomnia
+    //REMOVED ProductTag from include:[] and api/tags route (URL) works in Insomnia, but need to solve the issue of productTag not being realted/connected to Tag...
+
     include: [Product]
+
   })
     .then(Tag => res.json(Tag))
     .catch(err => {
