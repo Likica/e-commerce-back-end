@@ -1,7 +1,7 @@
 <h1 align='center'>e-commerce-back-end</h1>
 
 ### By likica * [Email me](mailto:fahrija_wyroski@live.com) * 
-  * [Walkthrough-video Link]('In Porgress') 
+  * [Walkthrough-video Link](https://drive.google.com/file/d/1_BlwfE-w3ooP46zvcwzuYglWogB78DDK/view) 
   * [GitHub Project Link](https://github.com/likica/e-commerce-back-end)
 <br></br>
 
@@ -13,11 +13,12 @@
 </p>
   
 <p align="center">
-<img src="https://img.shields.io/badge/-node.js-green" />
+<img src="https://img.shields.io/badge/-node.js-yellow" />
     <img src="https://img.shields.io/badge/Javascript-blue" />
     <img src="https://img.shields.io/badge/-json-pink" />
     <img src="https://img.shields.io/badge/jQuery-purple"  />
     <img src="https://img.shields.io/badge/-MySQL-red" />
+    <img src="https://img.shields.io/badge/-INSOMNIA-jade" />
 </p>
 
   ## Table of contents
@@ -31,6 +32,10 @@
   # Description
   ##### [Back to Table of Contents](#Table-of-Contents)
   Build the back end for an e-commerce site. Take a working Express.js API and configure it to use Sequelize to interact with a MySQL database.
+<h3 align="center" width="100%">
+ <br>INSOMNIA testing main page</br>
+<p align="center" width="100%">
+    <img src="assets/images/INSOMNIAtests_main.png" width="70%"/>
 
   ## User Story
   ##### [Back to Table of Contents](#Table-of-Contents)
